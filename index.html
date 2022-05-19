@@ -3,6 +3,14 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $('#show').click(function() {
+      $('.menu').toggle("slide");
+      });
+  });
+  </script>
 <div class="main">
   <div data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1000" class="logo">
     <img height="70px" width="auto" src="logo.jfif" alt="LOGO">
@@ -12,32 +20,39 @@
      data-aos-anchor-placement="center-bottom" data-aos-delay="1000" data-aos-duration="500" >COMING SOON ! <br /><span style="font-size:10px;">LET'S MAKE IMPACT</span></h1>
   
 </div>
+<div class="waitlist">
+  <div class="button">
+    <button id="show" type="submit" class="sexy-button btn-form-submit">
+    WAITLIST</button>
+</div>
+
+        
+        
+        <div class="menu" style="display: none;">
+           
+              <div class="form">
+                <input type="text" name="text" autocomplete="off" required />
+                <label for="text" class="label-name">
+                  <span class="content-name">
+                    ENTER E-MAIL ADDRESS
+                  </span>
+                </label>
+              </div> 
+              <div class="button">
+                <button type="submit" style="width:50px;" class="sexy-button btn-form-submit">
+                > </button>
+            </div>
+    
+        </div>
+       
+      
+  </div>
+
 
 <video autoplay loop id="video-background" muted>
-  <source src="Impact Market_ Coming Soon(1).mp4" type="video/mp4">
+  <source src="Impact Market_ Coming Soon(2)_Trim.mp4" type="video/mp4">
 </video>
-<div  class="fab-wrapper">
-  <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
-  <label class="fab" for="fabCheckbox">
-    <span class="fab-dots fab-dots-1"></span>
-    <span class="fab-dots fab-dots-2"></span>
-    <span class="fab-dots fab-dots-3"></span>
-  </label>
-  <div class="fab-wheel">
-    <a class="fab-action fab-action-1">
-      <i class="fas fa-question"></i>
-    </a>
-    <a class="fab-action fab-action-2">
-      <i class="fas fa-book"></i>
-    </a>
-        <a class="fab-action fab-action-3">
-      <i class="fas fa-address-book"></i>
-    </a>
-        <a class="fab-action fab-action-4">
-      <i class="fas fa-info"></i>
-    </a>
-  </div>
-</div>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
